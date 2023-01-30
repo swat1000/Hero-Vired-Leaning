@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+Enter a number 1: <input type="text" id="inputNumber1"><br>
+Enter a number 2: <input type="text" id="inputNumber2"><br>
+<button onclick="createTable()">Create Table</button>
+</form> 
+
+<br>
+<p id="table">
+</p>
+
+<script>
+function createTable() {
+  var inputNumber = document.getElementById("inputNumber1").value;
+  var tableLength = document.getElementById("inputNumber2").value;
+  var table = document.getElementById("table");
+  
+  for (var i = 1; i <= tableLength; i++) {
+    var row = table.insertRow();
+    var cell1 = row.insertCell();
+    var cell2 = row.insertCell();
+    cell1.innerHTML = inputNumber1 + " x " + i;
+    cell2.innerHTML = inputNumber2 * i;
+  }
+}
+</script>
+
+
+<!-- function tablefun() {
+    let inp1 = document.getElementById("inp1")
+    let inp2 = document.getElementById("inp2")
+    let output = document.getElementById("output")
+    for(let i=1; i<=parseInt(inp2.value); i++) {
+        const temp = document.createElement("p")
+        temp.innerHTML = `${inp1.value} * ${i} = ${parseInt(inp1.value) * i}`
+        output.appendChild(temp)
+    }
+} -->
+
+
+</body>
+</html>
+
+

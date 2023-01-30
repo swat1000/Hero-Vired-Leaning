@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var words = ["monkey","elephant","tiger","lion"];
+        
+        var word = words[Math.floor(Math.random()*words.length)];
+        
+        var arr1 = []
+
+        for(var i = 0;i < word.length;i++){
+            arr1[i] = "_";
+        }
+
+        var letters = word.length;
+
+
+        var guess = prompt("Enter a letter or Click cancel to stop playing.");
+        if(guess === null) {
+            Error;
+        } else if (guess.length !== 1){
+            alert("Please enter a single letter.");
+        } else {
+            for(var x = 0; j < word.length; x++){
+                if(word[x] === guess) {
+                    arr1[x] = guess; pendingLetters--;
+                }
+            }
+        }
+
+        alert(arr1.join(" "));
+        alert("Good job! The answer was " + word);
+
+
+
+        var word = pickWord();
+        var arr1 = arr2(word);
+        var pendingLetters = word.length;
+        var pickWord = function() {
+            
+        }
+
+        var arr2 = function(word) {
+
+        }
+
+        var matchedLetters = function(arr1){
+
+        }
+                
+        var getGuess = function() {
+            
+        }   
+        
+             
+            
+        
+
+
+    </script>
+</body>
+</html>
