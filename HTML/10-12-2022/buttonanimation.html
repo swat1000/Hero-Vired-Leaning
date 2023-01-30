@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Animation</title>
+    <style>
+        .cont{
+            display:flex;
+            justify-content: center;
+            padding: 40px;
+            height:200px;
+            
+        }
+        .btn{
+            width: 400px;
+            border-radius: 50px;
+            background-color: purple;
+            font-size:50px;
+            animation:click 2s li;
+        }
+        image{
+            opacity:0;
+        }
+        
+        .btn:focus{
+            animation: click 2s linear;
+
+        }
+        .btn:focus img{
+            animation: opacity 2s 0 2s linear 1;
+        }
+
+        @keyframes click{
+            from{
+                height:100px;
+                width:300px;
+                border-radius:60px;
+            }
+            to{
+                height:100px;
+                width: 300px;
+                border-radius: 50%;
+                background-color: green;
+            }
+            }
+            @keyframes opacity{
+                from{
+                    opacity: 1;
+                }
+                to {
+                    opacity: 0;
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont">  
+        <button class="btn"><span>Submit</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+ 
+    
+</body>
+</html>

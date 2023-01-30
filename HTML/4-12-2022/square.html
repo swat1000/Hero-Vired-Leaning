@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:500px;
+            height:500px;
+            background-color: blueviolet;
+            margin:50px;
+            animation: square 3s 2 alternate;
+        }
+        body{
+            display:flex;
+            justify-content: center;
+        }
+        @keyframes square{
+            0%{
+            
+            }
+            25%{
+                background-color: blue;
+                border-radius: 12%;
+                transform: scale(0.75);
+            }
+            50%{
+                background-color: yellow;
+                border-radius: 25%;
+                transform: scale(0.50);
+            }
+            75%{
+                background-color: red;
+                border-radius: 38%;
+                transform: scale(0.25);
+            }
+            100%{
+                background-color: orange;
+                border-radius: 50%;
+                transform: scale(0.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

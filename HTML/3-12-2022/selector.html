@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list li a{
+            color: red;
+        }
+        ul > ol li{
+            background-color: aqua;
+            list-style: none;
+        
+        }
+        h1 + p{
+            color: red;
+        }    
+            
+        
+        ol + h1{
+            color: blue;
+        }
+
+        .parent{
+            height: 500px;
+            width: 500px;
+            border:5px solid red;
+            margin:auto;
+            
+            
+        }
+
+        .child{
+            height:100px;
+            width:100px;
+            margin:5px;
+            position:relative;
+
+
+        }
+
+        .one{
+            background-color: green;
+            top:110px;
+
+            
+        }
+        .two{
+            background-color: black;
+            bottom:100px;
+            
+        }
+        .three{
+            background-color: yellow;
+        }
+        .four{
+            background-color: brown;
+            bottom:110;
+        }
+
+        .text-block{
+            position:absolute;
+            bottom: 100px;
+            top:150px;
+            
+        }
+        .container{
+            left: 30px;
+            top: 100px;
+            border: 5px solid blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="Nature" style="width:100%;">
+        <div class="text-block">
+          <h4>sun</h4>
+          <button>hello</button>
+        </div>
+        </div></body>
+    
+    <ul class="list">
+        <li><a href="">This is first anchor tag</a></li>
+        <li><a href="">This is second anchor tag</a></li>
+       <ol>
+            <li><a>Home</a></li>
+            <li><a>Contact</a></li>
+            
+       </ol>
+        <li><a href="">This is third anchor tag</a></li>
+        
+    </ul>
+    <ul >
+        <li><a href="">This is first anchor tag</a></li>
+        <li><a href="">This is second anchor tag</a></li>
+        <li><a href="">This is third anchor tag</a></li>
+        
+    </ul>
+
+   
+    <h1>Heading</h1>
+    <p>para1</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, ad.
+    </p>
+    <ol>
+      <li></li>
+      <li></li>
+    </ol>
+    <h1>Heading2</h1>
+    <p>para2</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, ad.
+    </p>
+
+    <div class="parent">
+        <div class="child one">1</div>
+        <div class="child two">2</div>
+        <div class="child three">3</div>
+        <div class="child four">4</div>
+    </div>
+  
+
+</body>
+</html>

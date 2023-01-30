@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading animation</title>
+    <style>
+        .body{
+            height: 320px;
+            width: 250px;
+            text-align: center;
+            padding: 10px;
+            margin: 20px;
+            background-color: aquamarine;
+        }
+        .loader  {
+         border: 4px solid #f3f3f3; 
+         border-top: 4px solid rgb(197, 187, 187);
+         border-bottom: 4px solid rgb(252, 252, 252);
+         border-right: 4px solid rgb(0, 0, 0);
+         border-left: 2px solid rgb(223, 215, 215);
+         border-radius: 50%;
+         float: right;
+         width: 30px;
+         height: 30px;
+         animation: spin 2s linear infinite;
+         animation-play-state: running;
+         opacity: 0;
+         
+        }
+        .content{
+            padding: 10px;
+            border: 2px solid black;
+            align-items: left;
+        }
+        .loaderback{
+            background-color:white;
+            height: 40px;
+            width: 40px;
+            float:right;
+            padding: 5px;
+            align-content: center;
+            opacity: 0;
+        }
+        input{
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        input:hover{
+            background-color: aquamarine;
+        }
+        p{
+            text-align: right;
+            margin-top: 30px;
+            opacity: 0;
+        }
+        .btn{
+            margin-right: 75px;
+            background-color: orangered!important;
+            color: white;
+            
+            
+        }
+        .content:hover .loaderback  {
+              opacity: 1;
+        }
+        .content:hover .loader {
+              opacity: 1;
+        }
+        .content:hover p {
+              opacity: 1;
+        }
+        
+         @keyframes spin  {
+         0% { transform: rotate(0deg); }
+         100% { transform: rotate(360deg); }
+         }
+
+  
+  
+
+         
+
+
+
+    </style>
+</head>
+<body>
+<div class="body">
+    <form class="content">
+        
+        <input type="text" id="User_name" name="fname" placeholder="Username"><br><br>
+        <input type="email" id="Email" name="lname" placeholder="Email"><br><br>
+        <input type="password" id="Password" name="lname" placeholder="Password"><br><br>
+        <input class="btn" type="submit" value="Submit">
+        <div class="loaderback">
+            <div class="loader"></div><br>
+        </div>
+        
+        <p>Waiting for <br>network...</p>
+        
+      </form>
+
+      <h3>Hover on the page to see animation</h3>
+    
+     
+</div>
+</body>
+</html>

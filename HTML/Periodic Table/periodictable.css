@@ -1,0 +1,75 @@
+body{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    height: 50px;
+}
+
+td {
+    height: 20px;
+    width: 50px;
+}
+
+#background{
+    background-color: yellow;
+}
+
+
+
+.emptycells {
+    empty-cells:hide;
+
+}
+.color1{
+    background: fixed;
+    background-color:#ff6603fc;
+}
+
+
+.color2{
+    background: fixed;
+    background-color:#cac6dd;
+}
+
+.color3{
+    background: fixed;
+    background-color:#d958dd;
+}
+
+.color4{
+    background: fixed;
+    background-color:#20aae9;
+}
+
+.color5{
+    background: fixed;
+    background-color:#fbdf82;
+}
+
+.color6{
+    background: fixed;
+    background-color:rgb(227 142 42);
+}
+
+.color7{
+    background: fixed;
+    background-color:rgb(201 251 172);
+}
+
+.color8{
+    background: fixed;
+    background-color:rgb(255 237 246);
+}
+
+.color9{
+    background: fixed;
+    background-color:rgb(245 225 184);
+}
+
+.color10{
+    background: fixed;
+    background-color:rgb(228, 222, 216);
+}

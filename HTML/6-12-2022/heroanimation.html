@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:200px;
+            height:200px;
+        }
+        span{
+            padding:50px;
+           display: table-cell;
+            background-color: gray;
+            border-bottom: 10px solid black;
+            animation: wave 5s alternate infinite;
+            
+        }
+        /* *{
+            border: 2px solid red;
+        } */
+        #h{
+            animation-delay: 0.1s;
+        }
+        #e{
+            animation-delay: 0.3s;
+        }
+        #r{
+            animation-delay: 0.5s;
+        }
+        #o{
+            animation-delay: 0.7s;
+        }
+        @keyframes wave{
+            
+            0%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(-100px);
+                border-bottom: 10px solid yellow;
+
+            }
+            100%{
+                transform: translateY(0px);
+                border-bottom: 10px solid black;
+            }
+            
+        }
+
+        /* *{
+            border: 1px solid red;
+        } */
+    </style>
+
+</head>
+<body>
+    
+    <span id="h">H</span>
+    <span id="e">E</span>
+    <span id="r">R</span>
+    <span id="o">O</span>
+    <!-- <span id="e">E</span>
+    <span id="e">E</span>
+    <span id="e">E</span>
+    <span id="e">E</span>
+    <span id="e">E</span> -->
+</body>
+</html>

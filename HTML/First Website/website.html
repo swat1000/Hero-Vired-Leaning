@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/9650a62e47.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+  #nav-bar {
+  /* position: fixed; */
+  top: 0px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  /*overflow: hidden;*/
+
+}
+
+header > nav > img{
+  width: 150px;
+  height:50px;
+}
+ul {
+  list-style: none;
+  
+}
+a{
+  text-decoration: none;
+}
+.nav-link {
+  display:block;
+  float:left;
+  align-items: center;
+  padding:18px 12px;
+  font-size: 15px;
+}
+#header{
+  display:flex;
+  height: 70px;
+
+}
+.message-box{
+  padding:5px;
+  margin:10px;
+  text-align: center;
+}
+.message-box h1{
+  font-size: 30px;
+  margin-bottom:15px;
+}
+.message-box input{
+  display:block;
+  margin:auto;
+  width:30%;
+  margin-bottom: 8px;
+}
+#submit{
+  background-color: orange;
+  padding: 5px 30px;
+  color:white;
+  font-size: 20px;
+  border-radius: 2px;
+
+}
+#features{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+}
+#features .feature{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width:50%;
+  margin: 20px auto;
+
+}
+#feature .feature i{
+  color:orange;
+  
+}
+#features .feature p{
+  font-size: larger;
+}
+#features .feature div h2{
+  margin-bottom:3px;
+}
+#how-it-work{
+  padding: 30px;
+  text-align: center;
+}
+#how-it-work #video{
+  height: 300px;
+  width: 600px;
+}
+#pricing{
+  display:flex;
+  justify-content: center;
+  padding: 5px;
+  flex-direction: column;
+}
+  
+  
+#pricing .price-box{
+  text-align: center;
+  border: 2px solid black;
+  height: 220px;
+  width: 80%;
+  margin: 10px auto; 
+  border-radius: 2px;
+}
+  
+  
+  
+.price-box > h3{
+  background-color: lightgray;
+  margin-top: 0px;
+ 
+}
+.price-box:first-child{
+  margin-right: 0;
+}
+.price-box:last-child{
+  margin-left: 0;
+}
+.btn{
+  background-color: orange;
+  border: 2px solid black;
+  padding: 10px;
+  
+}
+#main-footer{
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  background-color: gray;
+  padding: 5px;
+  flex-direction: column;
+}
+#main-footer div a{
+  padding: 20px;
+}
+#main-footer .my-name{
+  margin-top: 30px;
+}
+
+</style>
+
+  
+
+
+
+
+
+
+
+<body>
+  <header id="header">
+    <nav id="nav-bar">
+      <img id="header-img" src="https://1000logos.net/wp-content/uploads/2020/03/United-Colors-of-Benetton-Logo-1977.png" alt="logo" class="logo">
+      <ul>
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#how-it-work">How It Works</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="container">
+    <section class="message-box">
+      <h1>Sample products for shopping</h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" type="email" name="email" placeholder="example@mail.com">
+      <input id="submit" type="submit" value="Get Started" class="btn"></input>
+      </form>
+    </section>
+
+    <section id="features">
+      <div class="feature">
+        <i class="fab fa-free-code-camp fa-3x"></i>
+        <div>
+          <h2>Quality products</h2>
+          <p>Our products are of premium quality.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-shipping-fast fa-3x"></i>
+        <div>
+          <h2>Fast Shipping</h2>
+          <p>We make sure you receive your product timely. We also provide free returns
+            if you are not satisfied.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-battery-full fa-3x"></i>
+        <div>
+          <h2>Quality Assurance</h2>
+          <p> we will ensure there are no damages or faults </p>
+        </div>
+      </div>
+    </section>
+    <section id="how-it-work">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/CAHHnNF6Bu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section id="pricing">
+      <div class="price-box">
+        <h3>lorem</h3>
+        <h2>$600</h2>
+        <p>Lorem ipsum.
+          Lorem ipsum.
+          Lorem ipsum dolor.
+          Lorem ipsum.</p>
+        <a href="#" class="btn">SELECT</a>
+      </div>
+      <div class="price-box">
+        <h3>Lorem, ipsum.</h3>
+        <h2>$900</h2>
+        <p>Lorem ipsum.
+          Lorem ipsum.
+          Lorem ipsum dolor.
+          Lorem ipsum.</p>
+        <a href="#" class="btn">SELECT</a>
+      </div>
+      <div class="price-box">
+        <h3>Lorem, ipsum.</h3>
+        <h2>$1200</h2>
+        <p>Lorem ipsum.
+          Lorem ipsum.
+          Lorem ipsum dolor.
+          Lorem ipsum.</p>
+        <a href="#" class="btn">SELECT</a>
+      </div>
+    </section>
+  </div>
+  <!-- FOOTER -->
+  <footer id="main-footer">
+    <div>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+    </div>
+    <p class="my-name">This Page recreated by <a target="_blank" id="fcs" href="">Swatantra Chaurasia</a></p>
+    <p>&copy;Copyright 2022,Swatantra</p>
+  </footer>
+</body>
+
+
+</html>
