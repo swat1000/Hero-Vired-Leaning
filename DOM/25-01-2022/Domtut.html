@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head">Heading</h1>
+    <p id="para1">This is a paragraph 1</p>
+    <p id="para2">This is a paragraph 2</p>
+    <p id="para3">This is a paragraph 3</p>
+    <p id="para4">This is a paragraph 4</p>
+</body>
+<script>
+    var loc = document.getElementById("para1")
+    loc.style.background = "green"
+
+    var loc1 = documnet.getElementByClassname("head")
+    loc1[0].style.background = "red"
+
+    loc1[loc1.length-1].style.background = "orange"
+
+    for(var i in loc1){
+        loc1[i].style.fontWeight = "bold"
+    }
+</script>
+</html>

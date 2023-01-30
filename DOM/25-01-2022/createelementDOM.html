@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "main">
+    <p id="para">This is a paragraph</p>
+    </div>
+    <script>
+        var loc = document.getElementById("main")
+        loc.style.background = "green"
+
+        var el = document.createElement("p")
+        var contain = document.createTextNode("This is a para2")
+        el.appendChild(contain)
+        var loc1 = document.getElementById("para")
+        document.body.appendChild(el,loc1)
+
+        var loc2 = document.getElementById("main")
+        document.body.firstElementChild.appendChild(el)
+
+        // Removing Exiting element
+
+        // var parent = document.getElementById("main")
+        // var child = document.getElementById("para");
+        // parent.removeChild(child);
+
+        // let child = document.getElementById("para")
+        // child.parentNode.removeChild(child);
+
+         let child = document.getElementById("para")
+
+         let parent = document.getElementById("main")
+
+         let el1 = document.createElement("p")
+         let con = document.createTextNode("We are appending a new paragraph")
+         el1.appendChild(con)
+
+         parent.replaceChild(el1, child)
+
+
+    </script>
+</body>
+</html>

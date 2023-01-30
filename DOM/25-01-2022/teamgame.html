@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<h1 id="result"></h1>
+<body>
+    <Button Type="Button"  OnClick="TeamOne()" id="one">Team One</Button>
+    <Button Type="Button"  OnClick="TeamTwo()" id="two">Team Two</Button><br>
+    <div id="con">
+        <h1 id="total1"></h1><br>
+        <h1 id="total2"></h1><br>
+    </div>
+    <Button Type="Button"  OnClick="TotalClicks()">Total Clicks</Button>
+
+
+
+
+    <script>
+        var i=0,j=0,k=0;
+        function TeamOne(){
+            i+=1;
+            document.getElementById("result").innerHTML=`Team One Clicks: ${i}`;
+            document.getElementById("total1").style.display='none';
+            document.getElementById("total2").style.display='none';
+            document.getElementById("result").style.display='';
+        
+        }
+        function TeamTwo(){
+            j+=1;
+            document.getElementById("result").innerHTML=`Team Two Clicks: ${j}`;
+            document.getElementById("total1").style.display='none';
+            document.getElementById("total2").style.display='none';
+            document.getElementById("result").style.display='';
+        }
+        function TotalClicks(){
+            
+            document.getElementById("total1").innerHTML=`Team One Clicks: ${i}`;
+            document.getElementById("total2").innerHTML=`Team Two Clicks: ${j}`;
+            document.getElementById("result").style.display='none';
+            document.getElementById("total1").style.display='';
+            document.getElementById("total2").style.display='';
+            
+        }
+    </script>
+</body>
+</html>

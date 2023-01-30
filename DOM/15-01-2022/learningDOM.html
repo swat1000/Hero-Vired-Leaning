@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>DOM</h2>
+
+<p>Please input a number</p>
+
+Number 1:<input id="numb1"><br>
+Number 2:<input id="numb2"><br>
+
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  
+  let x = parseInt(document.getElementById("numb1").value);
+  let y = parseInt(document.getElementById("numb2").value);
+  
+  var sum = (x+y);
+  
+  
+  document.getElementById("demo").innerHTML = sum;
+}
+</script>
+
+</body>
+</html> 

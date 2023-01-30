@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- //Change style of elements -->
+    <!-- <ul>
+        <li>1</li>
+        <li>2</li>
+        <li id="three">3</li>
+        <li>4</li>
+    </ul> -->
+
+    
+    <!-- <script>
+        var loc = document.querySelectorAll("ul li");
+        console.log(loc.length);
+        for(i of loc){
+            document.write(i.innerHTML + "<br>");
+        }
+        // var loc = document.getElementById("three")
+        // loc.style.color = "green"
+
+        // loc[2].style.color = ("red")
+
+        var loc1 = document.querySelector("#three");
+        loc1.style.color = ("blue");
+    </script> -->
+
+    <!-- Getting values of attribute -->
+
+       <div class="main">
+        <a href = "www.herovired" target = "_blank" id = "main"></a>
+        <script>
+            var loc = document.getElementById("main")
+            console.log(loc.getAttribute("href"))
+            console.log(loc.getAttribute("target"))    
+        </script>
+       </div>
+
+
+</body>
+</html>
