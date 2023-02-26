@@ -143,3 +143,5 @@ list.insert({
     billAmount: 1000
 });
 
+console.log(list)
+
