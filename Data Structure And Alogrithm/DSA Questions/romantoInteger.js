@@ -26,3 +26,5 @@ function romantoInt(num){
 }
 
 console.log(romantoInt("IIIIII"));
+console.log(romantoInt("IXV"));
+console.log(romantoInt("XXXXX"));
