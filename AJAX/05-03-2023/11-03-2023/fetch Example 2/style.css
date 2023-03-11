@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+}
+
+
+th {
+    background-color: #0077b6;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 15px;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+td img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+
+td .description {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+td .brand {
+    color: #0077b6;
+    font-weight: bold;
+}
+
+
+td .price {
+    color: #d62828;
+    font-weight: bold;
+}
+
+
