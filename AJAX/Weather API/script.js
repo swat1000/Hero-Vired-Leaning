@@ -8,11 +8,11 @@ p.then((value1) => {
     console.log(value2)
 
     // Create HTML elements for the weather data
-    let cityElement = document.getElementById("city");
+    let cityElement = document.getElementById("wind");
     let temperatureElement = document.getElementById("temperature");
     let descriptionElement = document.getElementById("description");
 
-    cityElement.innerHTML = value2.temperature;
-    temperatureElement.innerHTML = value2.temperature;
-    descriptionElement.innerHTML = value2.description;
+    cityElement.innerHTML = `Wind is ${value2.wind}`;
+    temperatureElement.innerHTML = `Temprature is ${value2.temperature}`;
+    descriptionElement.innerHTML = `Weather condition ${value2.description}`;
 })    
