@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    class Login {
+        constructor(name, username, password){
+            this.name = name;
+            this.username = username;
+            this.password = password
+        }
+
+        loginSuccess() {
+            if (username == this.username && password == this.password){
+                console.log("Login Sucessful");
+            }else {
+                console.log("Try again")
+            }
+        }
+        
+
+    }
+
+    const p1 = new Login("Swatantra", "swatty", "1262716");
+    const p2 = new Login("Hero", "HVired", "2663232");
+
+    p1.loginSuccess("swatty", "1262716")
+    p1.loginSuccess("Hvred", "1266323")
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const learner = {
+        active: true,
+        details: function (){
+            console.log(`Hello ${this.name}`)
+        }
+    }
+
+    const obj1 = Object.create(learner)
+    console.log(obj1.active)
+
+    obj1.active = false;
+    console.log(obj1.active)
+    obj1.name = "Swatantra"
+    obj1.details()
+</script>
+<body>
+    
+</body>
+</html>
