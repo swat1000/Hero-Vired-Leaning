@@ -1,0 +1,5 @@
+<restaurants>
+  <restaurant name="yellow chilli" address="new delhi" lat="47.608940" lng="-122.340141" type="sitdown" />
+  <restaurant name="blue bar" address="mumbai" lat="47.613590" lng="-122.344141" type="bar" />
+  <restaurant name="green grill" address="bangalore" lat="47.618240" lng="-122.348141" type="sitdown" />
+</restaurants>
