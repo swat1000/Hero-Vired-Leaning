@@ -1,14 +1,7 @@
-const express = require("express");
-const app = express();
+const EventEmitter = require('events');
+const eventEmitter = new EventEmitter();
 
-const course = [{ course: "node"}, {course: "react"}];
-
-app.get("/course", (req, res)=>{
-    res.send("course");
+eventEmitter.on('action', function(msg){
+    console.log(msg);
 })
-
-app.get("/course/:name", function(req, res){
-    const couse={
-        
-    }
-})
+eventEmitter.emit('action', 'something')
