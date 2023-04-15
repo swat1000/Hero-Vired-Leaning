@@ -1,7 +1,15 @@
-const EventEmitter = require('events');
-const eventEmitter = new EventEmitter();
+let p = new Promise((res,rej)=>{
+    if(1 ==2)
+    res(true);
+    else
+    rej(false);
+});
 
-eventEmitter.on('action', function(msg){
-    console.log(msg);
-})
-eventEmitter.emit('action', 'something')
+p.then((message)=>{
+    console.log('Inside then met');
+},(message)=>{
+    console.log("Ind");
+
+}).catch((message)=>{
+    console.log("catch");
+});
